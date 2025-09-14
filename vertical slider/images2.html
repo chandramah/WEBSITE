@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>vertical image scroll</title>
+  <link rel="stylesheet" href="/vertical slider/images2.css">
+</head>
+<body>
+
+  <!-- Logo at Top -->
+  <!-- <div class="logo-brand2">
+
+            <div><span class="brand-name2">Raynx Systems</span></div>
+            <img src="brand2.png" alt="Company Logo" height="60px" style="margin-left: -26px;">
+          </div> -->
+
+  <div class="main-flex-container">
+    <!-- Left: Image Slider -->
+    <!-- <div class="imgslider">
+      <div class="slider">
+        <div class="slides" id="slideTrack">
+          <img src="/team2.webp" alt="Slide 1">
+          <img src="/brand2.png" alt="Slide 2">
+          <img src="/brand1.png" alt="Slide 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </div> -->
+
+    <!-- Right: Scrollable Container -->
+    <div class="scroll-container" id="container">
+      <!-- <img class="thumb" src="/" alt="Image 1">
+      <img class="thumb" src="C:\Users\mithi\Downloads\Raynx Final website (2)\Raynx Final website\gallery\IMG20250808161435.jpg" alt="Image 2">
+      <img class="thumb" src="" alt="Image 3"> -->
+      <img class="thumb" src="/gallery/image18.jpeg" alt="Image 18">
+      <img class="thumb" src="/gallery/image4.jpg" alt="Image 4">
+      <img class="thumb" src="/gallery/image12.jpeg" alt="Image 12">
+      <img class="thumb" src="/gallery/photo3.jpeg" alt="photo3">
+       <img class="thumb" src="/gallery/image10.jpeg" alt="Image 10">
+      <img class="thumb" src="/gallery/photo2.jpeg" alt="photo2">
+      <img class="thumb" src="/gallery/photo1.jpeg" alt="photo1">
+      <img class="thumb" src="/gallery/image1.jpg" alt="Image 1">
+  
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const slideTrack = document.getElementById("slideTrack");
+    let slideIndex = 0;
+
+    function updateSlide() {
+      const width = slideTrack.children[0].clientWidth;
+      slideTrack.style.transform = `translateX(-${slideIndex * width}px)`;
+    }
+
+    function nextSlide() {
+      slideIndex = (slideIndex + 1) % slideTrack.children.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      slideIndex = (slideIndex - 1 + slideTrack.children.length) % slideTrack.children.length;
+      updateSlide();
+    }
+
+    const thumbs = document.querySelectorAll(".scroll-container .thumb");
+    thumbs.forEach((img) => {
+      img.addEventListener("click", () => {
+        const overlay = document.createElement("div");
+        overlay.className = "image-viewer-overlay";
+
+        const box = document.createElement("div");
+        box.className = "image-viewer-box";
+
+        const fullImg = document.createElement("img");
+        fullImg.src = img.src;
+
+        const closeBtn = document.createElement("span");
+        closeBtn.className = "close-btn";
+        closeBtn.innerHTML = "&times;";
+        closeBtn.onclick = () => overlay.remove();
+
+        box.appendChild(closeBtn);
+        box.appendChild(fullImg);
+        overlay.appendChild(box);
+        document.body.appendChild(overlay);
+      });
+    });
+  </script>
+
+  <script>
+  document.querySelectorAll('.scroll-container img').forEach(img => {
+    img.addEventListener('mouseenter', () => {
+      img.scrollIntoView({
+        behavior: "smooth",
+        block: "center" // centers the hovered image in view
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
+

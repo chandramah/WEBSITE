@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/images.css">
+</head>
+
+<body>
+  
+        <div class="part1">
+            <div class="brand">
+                <h2 style="color: white;">Raynx</h2>&nbsp;
+                <h2 style="color:#e3cd07">Systems</h2>
+            </div>
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/brand2.png" alt="logo for the company" height="80px" width="80px" >
+                </a>
+            </div>
+
+        </div>
+
+        <p class="head1"><b>Key People</b></p>
+        <div class="imgslider">
+            <div class="slider">
+                <div class="slides">
+                    <img src="/keypeople/image1.jpeg" class="active" height="250px" width="250px">
+                     <img src="/keypeople/image4.jpeg" class="active" height="250px" width="250px">
+                      <img src="/keypeople/image9.jpeg" class="active" height="250px" width="250px">
+                    
+                </div>
+
+                <!-- Navigation buttons -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <script>
+        let slides = document.querySelectorAll(".slides img");
+        let currentIndex = 0;
+
+        document.querySelector(".next").addEventListener("click", () => {
+            slides[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add("active");
+        });
+
+        document.querySelector(".prev").addEventListener("click", () => {
+            slides[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            slides[currentIndex].classList.add("active");
+        });
+
+
+
+    </script>
+
+
+
+ 
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>

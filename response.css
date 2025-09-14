@@ -1,0 +1,84 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    
+    background-color: #f5efef;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+
+    
+}
+
+/*logo and company name styling*/
+.part1{
+    padding-top:10px;
+    display: flex;  
+}
+
+.logo{
+   
+    display:inline-block;
+    margin-left: -280px;
+    margin-top: 20px;
+}
+
+.brand{
+    display: flex;
+    padding-bottom:-25px;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: left;
+    width: 400px;
+       
+}
+
+.brand h2{
+    color:  blue;
+}
+
+
+.res1{
+    
+    text-align: center;
+    margin-top: 65px;
+}
+
+.one{
+    font-size: 50px;
+    font-family: 'Josefin Sans' , 'Serif';
+   color:  blue;
+    
+    
+}
+
+
+.res2{
+    
+    text-align: center;
+    margin-top: 25px;
+    margin-top: 50px;
+}
+
+.two{
+    font-size: 40px;
+    font-family: 'Playfair Display' , 'Serif';
+  color:  blue;
+    
+    
+}
+
+.three{
+    font-size:35px;
+    font-family: 'Dancing Script' , 'Serif';
+color:  blue;
+    margin-top: -35px;
+    
+    display: block;
+}
+

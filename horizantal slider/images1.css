@@ -1,0 +1,156 @@
+html,body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+   overflow:hidden;
+}
+body{
+    /* background-image: url('/BG.png'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+.part1{
+    /*border: 3px solid white;*/
+    padding-top:10px;
+    display: flex;  
+}
+.logo{
+   
+    display:inline-block;
+    margin-left: -280px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo a{
+    cursor:pointer;
+ }
+
+.brand{
+    display: flex;
+
+    /*border: 3px solid black;*/
+    padding-bottom:-25px;
+    margin-top: 20px;
+    margin-left: 60px;
+
+    text-align: left;
+    width: 400px;
+    position: relative;
+       
+}
+/* 
+.mainwindow{
+    border: 1px solid white;
+   
+    
+
+} 
+
+.subwindow{
+position: relative;
+max-width: 48rem;
+margin: 0 auto;
+}
+
+.superwindow{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25rem);
+    border-radius: 0.5rem; 
+    
+}
+
+.superwindow img{
+    flex: 1 0 100%;
+    scroll-snap-align: stop;
+    object-fit: cover;
+}
+
+.referedimages{
+    display: flex;
+    column-gap:1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.referedimages a{
+    width: 0.5rem;
+    height:0.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.referedimages a:hover{
+    opacity: 1;
+}  */
+
+.head1{
+    margin-left: 312px;
+    margin-top: 50px;
+    margin-bottom: -18px;
+     color: white;
+     font-family: 'Poppins',serif;
+     font-size: 25px;
+}
+
+
+
+ .imgslider {
+    
+    display: flex;
+    margin-top: 120px;
+    margin-left: 80px;
+
+    
+} 
+
+.slider {
+    position: relative;
+    width: 544px;
+    height: 400px;
+    overflow: hidden;
+   
+   
+    
+}
+
+.slides img {
+    width: 34rem;
+    height: 25rem;
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: #342f2fcc;
+}
