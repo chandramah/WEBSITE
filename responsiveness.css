@@ -230,7 +230,7 @@
         margin-top: 20px;
     }
 
-    /* key products and services */
+    /* products and services */
     #slide1 {
         margin-top: -35px;
     }
@@ -1263,3 +1263,239 @@
     }
 
 }
+
+@media (min-width:769px) and (max-width:850px){
+        html {
+        position: relative;
+    }
+    body{
+        width:100%;
+    }
+
+    /* .hero-container{
+    border: 3px solid red;
+
+  } */
+
+    /* 
+  .main-nav{
+    display: none;
+  } */
+
+
+    .logo-image {
+        height: 6vh;
+        padding-left: 7px;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .main-nav ul li a {
+        color: white;
+        margin-left: 3px;
+        gap: 5px;
+    }
+
+    #menubar {
+        display: none;
+        /* start hidden */
+        flex-direction: row;
+        /*stack vertically when opened*/
+        background-color: rgba(14, 59, 222, 0.8);
+        /* optional: dropdown effect */
+        padding: 2px;
+        border-radius: 8px;
+        position: absolute;
+        top: 5px;
+        right: 72px;
+        z-index: 1000;
+        height: 73px;
+        width: 262px;
+    }
+
+    .icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-right: 2px;
+        font-size: 6vw;
+        margin-top: 10px;
+
+
+
+    }
+
+
+    .tagline {
+        padding-top: 25px;
+    }
+
+    .subtitle {
+        float: right;
+        font-size: 2.5vw;
+        margin-top: 25px;
+    }
+
+     #mid {
+        padding-top: 14px;
+    }
+
+    .team {
+        margin-left: -50px;
+        font-size: 1.7em;
+    }
+
+    .cont {
+        display: inline;
+    }
+
+    .cont img {
+        width: 365px;
+        margin-left: 47px;
+        margin-top: 32px;
+    }
+
+    .cont p {
+       width: 444px;
+        margin-left: 134px;
+        font-size: medium;
+
+    }
+/* key products and services */
+    .main-image2 {
+        
+        display: none;
+    }
+    .yellow-box{
+        display:none;
+    }
+
+    /* keypeople */
+
+    .gallery{
+        width:60%;
+    }
+/* about us */
+.about-container {
+    display: inline;
+}
+.about-img {
+        width: 90%;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+
+    .about-text h2 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 8vw;
+
+
+    }
+
+    .about-text p {
+        font-weight: 600;
+        font-size: medium;
+                margin: -64px 0px;
+        margin-left: 67px;
+        margin-right: 40px;
+        width: 80%;
+    }
+
+    .yellow-bar{
+        height: 460px;
+       }
+    .values-content
+    {
+        position:relative;
+    }
+    .values-title h2{
+        font-size: 42px;
+    margin-top: -186px;
+    color: #555151;
+
+    }
+    .values-image{
+            margin-top: -68px;
+            width: 95%;
+    }
+   
+    .vision{
+        margin-left: -388px;
+    margin-top: 24px;
+    }
+
+    .mission{
+        position: absolute;
+        top: 10px;
+        margin-left: -60px;
+
+    }
+     .main-image1{
+        width: 300px;
+    }
+
+
+    .team{
+        margin-left: 10px;
+    }
+   
+
+
+    .gallery{
+            margin-left: -86px;
+    }
+
+    #part2 {
+        display: inline;
+    }
+
+    .contact li {
+        font-size: 17px;
+    }
+
+    .contact {
+        width: 80%;
+        height: 401px;
+        margin-left: 56px;
+    }
+
+    .getintouch {
+        margin-top: 11px;
+        width: 80%;
+        height: 401px;
+        margin-left: 56px;
+    }
+
+    .getintouch {
+        margin-top: 12px;
+    }
+
+    #Message {
+        width: 92%;
+    }
+
+    .head3 {
+        font-size: 50px;
+    }
+
+    .head4 {
+        font-size: 50px;
+    }
+
+    .last {
+        font-size: 21px;
+        margin-top: -40px;
+    }
+
+
+}
+
+
